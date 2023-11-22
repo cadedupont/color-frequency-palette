@@ -30,16 +30,16 @@ The program will generate two files in the `res/out` directory:
   </tr>
   <tr>
     <td><p align="center">Input Image</p></td>
-    <td><img width="500" height="200" src="res/in/lahai.jpg"/></td>
-    <td><img width="500" height="200" src="res/in/wish-you-were-here.jpg"/></td>
-    <td><img width="500" height="200" src="res/in/never-enough.jpg"/></td>
-    <td><img width="500" height="200" src="res/in/american-love-call.jpg"/></td>
+    <td><img src="res/in/lahai.jpg"/></td>
+    <td><img src="res/in/wish-you-were-here.jpg"/></td>
+    <td><img src="res/in/never-enough.jpg"/></td>
+    <td><img src="res/in/american-love-call.jpg"/></td>
   </tr>
   <tr>
     <td><p align="center">Output Image</p></td>
-    <td><img width="500" height="200" src="res/out/lahai.jpg"/></td>
-    <td><img width="500" height="200" src="res/out/wish-you-were-here.jpg"/></td>
-    <td><img width="500" height="200" src="res/out/never-enough.jpg"/></td>
-    <td><img width="500" height="200" src="res/out/american-love-call.jpg"/></td>
+    <td><img src="res/out/lahai.jpg"/></td>
+    <td><img src="res/out/wish-you-were-here.jpg"/></td>
+    <td><img src="res/out/never-enough.jpg"/></td>
+    <td><img src="res/out/american-love-call.jpg"/></td>
   </tr>
 </table>
