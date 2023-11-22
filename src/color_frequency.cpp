@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 
     // Attempt to read image file
     std::string image_name = argv[1];
-    cv::Mat image = cv::imread("res/in/" + image_name + ".jpg", cv::IMREAD_COLOR);
+    cv::Mat image = cv::imread("res/in/" + image_name, cv::IMREAD_COLOR);
 
     // Exit if image file could not be read
     if (image.empty()) {
@@ -40,7 +40,8 @@ int main(int argc, char *argv[]) {
     });
 
     // Print contents of sorted vector to file
-    std::ofstream dout("res/out/" + image_name + ".csv");
+    std::string image_no_ext = image_name.substr(0, image_name.find_last_of("."));
+    std::ofstream dout("res/out/" + image_no_ext + ".csv");
     dout << "R-G-B Value,Hex Code,Frequency" << std::endl;
     for (auto &color : rgb_vec) {
         // Get RGB values
@@ -84,7 +85,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Write palette image to file
-    cv::imwrite("res/out/" + image_name + ".jpg", palette);
+    cv::imwrite("res/out/" + image_no_ext + ".jpg", palette);
 
     return 0;
 }
