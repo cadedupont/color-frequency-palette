@@ -1,5 +1,5 @@
 # color-frequency
-C++ project for finding the most frequent colors in a given image, generating a palette of the 200 most frequent colors, and generating a csv file containing all colors found in the image and their frequency.
+C++ project for finding the most frequent colors in a given image, generating a palette of the 100 most frequent colors, and generating a csv file containing all colors found in the image and their frequency.
 
 ## Prerequisites:
 - g++ (C++ compiler)
