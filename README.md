@@ -23,32 +23,27 @@ The program will generate two files in the `res/out` directory:
 <table>
   <tr>
     <td></td>
-    <td>Input Image</td>
-    <td>Output Image</td>
+    <td><p align="center">Input Image</p></td>
+    <td><p align="center">Output Image</p></td>
   </tr>
   <tr>
-    <td><i>Lahai</i> - Sampha</td>
-    <td><img src="res/in/lahai.png"/></td>
+    <td><p align="center"><i>Lahai</i> - Sampha</p></td>
+    <td><img src="res/in/lahai.png" width="1000"/></td>
     <td><img src="res/out/lahai.jpg"/></td>
   </tr>
   <tr>
-    <td><i>American Love Call</i> - Durand Jones &amp; The Indications</td>
-    <td><img src="res/in/american_love_call.jpg"/></td>
-    <td><img src="res/out/american_love_call.jpg"/></td>
-  </tr>
-  <tr>
-    <td><i>Wish You Were Here</i> - Pink Floyd</td>
-    <td><img src="res/in/wish_you_were_here.jpg"/></td>
+    <td><p align="center"><i>Wish You Were Here</i> - Pink Floyd</p></td>
+    <td><img src="res/in/wish_you_were_here.jpg" width="1000"/></td>
     <td><img src="res/out/wish_you_were_here.jpg"/></td>
   </tr>
   <tr>
-    <td><i>NEVER ENOUGH</i> - Daniel Caesar</td>
-    <td><img src="res/in/never_enough.jpg"/></td>
-    <td><img src="res/out/never_enough.jpg"/></td>
+    <td><p align="center"><i>American Love Call</i> - Durand Jones & The Indications</p></td>
+    <td><img src="res/in/american_love_call.jpg" width="1000"/></td>
+    <td><img src="res/out/american_love_call.jpg"/></td>
   </tr>
   <tr>
-    <td><i>This Old Dog</i> - Mac DeMarco</td>
-    <td><img src="res/in/this_old_dog.jpg"/></td>
+    <td><p align="center"><i>This Old Dog</i> - Mac DeMarco</p></td>
+    <td><img src="res/in/this_old_dog.jpg" width="1000"/></td>
     <td><img src="res/out/this_old_dog.jpg"/></td>
   </tr>
 </table>
