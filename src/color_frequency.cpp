@@ -82,6 +82,16 @@ int main(int argc, char *argv[]) {
                 }
             }
         }
+
+        // Get current color's hex code
+        std::stringstream hex_code;
+        hex_code << std::hex << std::setfill('0') << std::setw(2) << color[0] << std::setw(2) << color[1] << std::setw(2) << color[2];
+        
+        // Calculate font color based on brightness of current color (light colors get black font, dark colors get white font)
+        int font_color = (color[0] + color[1] + color[2]) / 3 > 128 ? 0 : 255;
+
+        // Print current color's hex code onto the palette image
+        cv::putText(palette, hex_code.str(), cv::Point((i % blocks_per_row) * 100 + 25, (i / blocks_per_row) * 100 + 50), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(font_color, font_color, font_color), 1, cv::LINE_AA);
     }
 
     // Write palette image to file
