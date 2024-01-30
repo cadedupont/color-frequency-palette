@@ -1,0 +1,41 @@
+body {
+  background-color: #16615d;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Fira Code",
+    monospace;
+}
+
+.custom-upload-button, .error-message {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  margin: 40px;
+}
+
+.custom-upload-button {
+  background-color: #78c5c0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #578f8c;
+    color: white;
+  }
+}
+
+.error-message {
+  background-color: #ff0000;
+}
+
+.uploaded-image {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto;
+}
