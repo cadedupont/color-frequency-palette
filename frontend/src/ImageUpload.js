@@ -1,8 +1,9 @@
 // ImageUpload.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import OutputImage from './OutputImage';
 
-const ImageUpload = () => {
+const ImageUpload = (props) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -24,12 +25,18 @@ const ImageUpload = () => {
     formData.append('image', file);
 
     // Upload image to server
-    try {
-      const response = await axios.post('http://localhost:5000/upload', formData);
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error uploading file:', error);
-    }
+    fetch("http://localhost:5000/upload", {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        props.onUploadSuccess(true);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   };
 
   return (
@@ -39,7 +46,7 @@ const ImageUpload = () => {
       </label>
       <input
         id="file-upload"
-        style={{display: 'none'}}
+        style={{ display: 'none' }}
         type="file"
         onChange={handleImageChange}
       />
