@@ -1,50 +1,70 @@
-# Color Frequency Palette
-C++ project for finding the most frequent colors in a given image, generating a palette of the 100 most frequent colors, and generating a csv file containing all colors found in the image and their frequency.
+# Getting Started with Create React App
 
-## Prerequisites:
-- g++ (C++ compiler)
-- Make
-- OpenCV
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To run:
-1. Clone the repository by running the following in your machine's terminal:<br>
-   `git clone https://github.com/cadedupont/color-frequency-palette.git`
-3. Navigate to the directory containing the Makefile, which is the root directory of the project
-4. Run `make` to compile the program and generate the executable
-5. Run `./color_frequency <image_file>` from the root directory to run the program on the image of your choice (include file extension but exclude file path)
+## Available Scripts
 
-Included in the `res/in` directory are some sample images of album covers I used to test the program. The program is hardcoded to look inside the `res/in` directory for the image file, so if you want to use your own image, you'll need to move it into that directory.
+In the project directory, you can run:
 
-## Output:
-The program will generate two files in the `res/out` directory:
-1. `<image_file_name>.jpg` - a 1000x1000 image containing a palette of the 100 most frequent colors found in the provided image, with each color's hex code written on their respective block in the palette
-2. `<image_file_name>.csv` - a csv file containing every color's RGB values, hex code, and frequency in the original image (sorted by frequency in descending order)
+### `npm start`
 
-## Examples:
-<table>
-  <tr>
-    <td><p align="center">Album Cover</p></td>
-    <td><p align="center">Input Image</p></td>
-    <td><p align="center">Output Image</p></td>
-  </tr>
-  <tr>
-    <td><p align="center"><i>Lahai</i> - Sampha</p></td>
-    <td><img src="res/in/lahai.png" width="1000"/></td>
-    <td><img src="res/out/lahai.jpg"/></td>
-  </tr>
-  <tr>
-    <td><p align="center"><i>Wish You Were Here</i> - Pink Floyd</p></td>
-    <td><img src="res/in/wish_you_were_here.jpg" width="1000"/></td>
-    <td><img src="res/out/wish_you_were_here.jpg"/></td>
-  </tr>
-  <tr>
-    <td><p align="center"><i>American Love Call</i> - Durand Jones & The Indications</p></td>
-    <td><img src="res/in/american_love_call.jpg" width="1000"/></td>
-    <td><img src="res/out/american_love_call.jpg"/></td>
-  </tr>
-  <tr>
-    <td><p align="center"><i>This Old Dog</i> - Mac DeMarco</p></td>
-    <td><img src="res/in/this_old_dog.jpg" width="1000"/></td>
-    <td><img src="res/out/this_old_dog.jpg"/></td>
-  </tr>
-</table>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
